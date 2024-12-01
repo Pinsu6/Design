@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <title>Styled Form</title>
+  <style>
+    .custom-card {
+      background-color: #311552;
+      color: #dcdcdc;
+      /* Dark white (light grey) */
+      box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.7), 15px 0px 20px rgba(0, 0, 0, 0.6);
+      /* Right side shadow */
+    }
+
+
+    .custom-card input {
+      background-color: #653d7a;
+      /* Input box background color */
+      border: none;
+      /* Remove white border */
+      color: #ffffff;
+      /* Input text color */
+      border-radius: 30px;
+      /* Rounded-pill effect */
+      padding: 10px 15px;
+      /* Padding for better look */
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 5px 5px 15px rgba(0, 0, 0, 0.4);
+      /* Shadow for 3D effect */
+      transition: all 0.3s ease;
+      /* Smooth transition for hover effect */
+    }
+
+    .custom-card input:focus {
+      outline: none;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 5px 5px 25px rgba(0, 0, 0, 0.5);
+      /* Increased shadow on focus for deeper 3D effect */
+      border: 2px solid #c48ae3;
+      /* Highlight border color */
+    }
+
+
+    .custom-card input:focus {
+      outline: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      /* Increased shadow on focus */
+      border: 2px solid #c48ae3;
+      /* Highlight border color */
+    }
+
+
+
+    .btncolor {
+      background-color: #c48ae3;
+      border: none;
+    }
+
+    .btncolor:hover {
+      background-color: #522d68;
+    }
+
+
+    .logo-div {
+      background-color: #653d7a;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5), 8px 8px 24px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .logo-div:hover {
+      box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6), 12px 12px 30px rgba(0, 0, 0, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .logo-div img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .logo-div span {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body style="background-color: #b849f2;">
+  <div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card rounded-5 custom-card"
+      style="width: 22rem; height: max-content; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+
+      <div class="card-body ">
+
+        <p class="card-text p-2">
+        <h5 class="card-title mb-5 fw-bolder">Sign Up</h5>
+        <form class="  ">
+          <!-- Username -->
+          <div class="mb-3  ">
+            <label for="username" class="form-label fw-bold">Username</label>
+            <input type="text" id="username" class="form-control fw-bold rounded-3" />
+          </div>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email</label>
+            <input type="email" id="email" class="form-control fw-bold rounded-3" />
+          </div>
+          <!-- Password -->
+          <div class="mb-3 ">
+            <label for="password" class="form-label fw-bold">Password</label>
+            <input type="password" id="password" class="form-control fw-bold rounded-3" />
+          </div>
+          <div class="mb-3 d-flex justify-content-center p-3">
+            <span class="fw-bold text-white">or sign up with </span>
+          </div>
+
+          <div class="mb-3 d-flex align-items-center border-1 rounded-3 logo-div">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+              alt="Facebook" />
+            <span class="fw-bold text-white w-100 text-center">Sign in with Facebook</span>
+          </div>
+
+
+
+
+          <div class="mb-3 d-flex align-items-center border-1 rounded-3 logo-div"
+            style="background-color: #653d7a; padding: 10px;">
+            <img src="https://img.icons8.com/?size=100&id=V5cGWnc9R4xj&format=png&color=000000" alt="Facebook"
+              style="width: 20px; height: 20px; margin-right: 10px;" />
+            <span class="fw-bold text-white w-100 text-center">Sign in with Google</span>
+          </div>
+
+
+          <div class="container d-flex justify-content-center mt-4 p-4  ">
+            <button type="submit" class="btn btncolor text-white rounded-pill w-100">Sign in </button>
+          </div>
+
+        </form>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
